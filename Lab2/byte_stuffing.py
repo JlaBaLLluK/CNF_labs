@@ -1,6 +1,3 @@
-import pyStuffing
-
-
 class ByteStuffing:
     flag = chr(int(b'01111110', 2))
 
@@ -16,8 +13,7 @@ class ByteStuffing:
 
             stuffed_chars.append(char)
 
-        stuffed_data = ''.join(stuffed_chars)
-        return stuffed_data
+        return ''.join(stuffed_chars)
 
     def un_stuff(self, data_from_package):
         un_stuffed_data = ""
